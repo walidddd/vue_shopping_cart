@@ -10,7 +10,6 @@ This is a fully functional shopping cart built using **Vue.js**. The cart system
 - **Remove Products from the Cart**: Users can remove individual products or clear the entire cart.
 - **Update Product Quantity**: Users can adjust the quantity of items, and changes will be reflected in the total price.
 - **Dynamic Price Calculation**: The cart dynamically calculates the total cost based on product quantities, prices, discounts, taxes, and shipping.
-- **Local Storage Integration**: The cart state is preserved between sessions using local storage.
 - **Customization via Configuration**: Customize the cart system's behavior and appearance using a configuration file.
 
 ## Project Setup
