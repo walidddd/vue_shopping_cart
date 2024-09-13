@@ -1,0 +1,108 @@
+/*===========functions==============*/
+@mixin res-font-size($xs, $s, $mid, $lg, $xlg) {
+	@media (max-width: map-get($responsive-screens,"xsmall")) {
+		font-size: $xs;
+	}
+	@media (min-width: map-get($responsive-screens,"xsmall")) {
+		font-size: $xs;
+	}
+	@media (min-width: map-get($responsive-screens,"small")) {
+		font-size: $s;
+	}
+	@media (min-width: map-get($responsive-screens,"miduem")) {
+		font-size: $mid;
+	}
+	@media (min-width: map-get($responsive-screens,"large")) {
+		font-size: $lg;
+	}
+	@media (min-width: map-get($responsive-screens,"xlarge")) {
+		font-size: $xlg;
+	}
+}
+@mixin makeButton($padding, $font_size, $background, $color, $hover) {
+	
+	padding: $padding;
+	background-color: $background;
+	color: $color;
+	margin-top: 29px;
+	text-decoration: none;
+	font-size: $font_size;
+	font-weight: 400;
+	transition: 0.3s ease;
+	transition-property: color, background;
+	border: 1px solid $color;
+	font-weight: 400;
+	&:hover {
+		@if ($hover == "default") {
+			background-color: $color;
+			color: $background;
+			border: 1px solid $color;
+		}
+		@if ($hover == "width") {
+			background: linear-gradient(270deg, rgba(0, 0, 0, 0) 50%, $background 0);
+			background-size: 200% 100%;
+			background-position: 100% 100%;
+			border: 1px solid;
+			color: $background;
+			background-color: $color;
+		}
+	}
+}
+
+@mixin makeInput($width: 100%) {
+	width: $width;
+	height: 55px;
+	border: 0.5px solid #88888894;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 0 22px;
+}
+
+/*========================extand class============================================*/
+
+/*search bar*/
+.search_bar {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	input {
+		width: 490px;
+		height: 53px;
+		border: 0.5px solid #888888b8;
+		border-radius: 5px;
+		padding: 0 20px;
+		font-size: 17px;
+		transition: 0.6s ease-in-out border;
+		outline: none;
+		&:focus {
+			border: 1px solid #000000;
+			transition: 1s ease-in-out border;
+		}
+	}
+	.input_search {
+		position: relative;
+		img {
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+	}
+}
+
+/*extend class scroll*/
+.scroll_style {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #00000073;
+	}
+}

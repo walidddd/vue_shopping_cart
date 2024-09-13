@@ -1,0 +1,20 @@
+/*start variables*/
+
+/*colors*/
+$main_color: #000000;
+$second-color: #888888;
+$color_button: #1E1E1E;
+$active_color: #00A9DE;
+$color_active_img:  invert(39%) sepia(100%) saturate(540%) hue-rotate(153deg) brightness(100%) contrast(92%);
+/*fonts*/
+$logo_font: 'Judson', serif;
+
+
+// For Layout & Responsive Things
+$responsive-screens: (
+  'xsmall': 675px,
+  'small': 768px,
+  'miduem': 992px,
+  'large': 1400px,
+  'xlarge': 1600px,
+);

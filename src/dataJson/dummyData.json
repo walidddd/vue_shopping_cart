@@ -1,0 +1,123 @@
+{
+    "cartrequest_cart_uuid": "dummy-uuid-123",
+    "cartrequest_customer_id": "dummy-customer-id",
+    "cartrequest_cart_add": [
+        {
+            "cartadd_product_id": "dummy-product-id-1",
+            "cartadd_variant_id": "dummy-variant-id-1",
+            "cartadd_variant_add_qty": 10,
+            "cartadd_product_uuid": "dummy-product-uuid-1"
+        },
+        {
+            "cartadd_product_id": "dummy-product-id-2",
+            "cartadd_variant_id": "dummy-variant-id-2",
+            "cartadd_variant_add_qty": 20,
+            "cartadd_product_uuid": "dummy-product-uuid-2"
+        }
+    ],
+    "cartrequest_products": [
+        {
+            "cartproducts_status": "dummy-status",
+            "cartproducts_product_uuid": "dummy-product-uuid-1",
+            "cartproducts_product_id": "dummy-product-id-1",
+            "cartproducts_variant_id": "dummy-variant-id-1",
+            "cartproducts_product_name": "Dummy Product 1",
+            "cartproducts_product_model": "DUM200",
+            "cartproducts_product_on_backorder": true,
+            "cartproducts_variant_price": {
+                "decimal": "$10.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 1000,
+                "binary_operator": 1
+            },
+            "cartproducts_variant_total_price": {
+                "decimal": "$10.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 1000,
+                "binary_operator": 1
+            },
+            "cartproducts_variant_on_sale": true,
+            "cartproducts_sale_percentage": 50,
+            "cartproducts_variant_qty_in_cart": 5,
+            "cartproducts_product_option": "dummy-option",
+            "cartproducts_variant_option_value": "dummy-value",
+            "cartproducts_product_variant_image": "https://dummyimage.com/product1.jpg",
+            "cartproducts_variant_weight": 5,
+            "cartproducts_product_custom_fields": "dummy-custom-fields",
+            "cartproducts_variant_sku": "dummy-sku",
+            "cartproducts_variant_barcode": "dummy-barcode",
+            "cartproducts_variant_original_price": {
+                "decimal": "$20.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 2000,
+                "binary_operator": 1
+            },
+            "cartproducts_taxable": true,
+            "shipping_location": "dummy-location"
+        },
+        {
+            "cartproducts_status": "dummy-status",
+            "cartproducts_product_uuid": "dummy-product-uuid-2",
+            "cartproducts_product_id": "dummy-product-id-2",
+            "cartproducts_variant_id": "dummy-variant-id-2",
+            "cartproducts_product_name": "Dummy Product 2",
+            "cartproducts_product_model": "DUM300",
+            "cartproducts_product_on_backorder": false,
+            "cartproducts_variant_price": {
+                "decimal": "$15.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 1500,
+                "binary_operator": 1
+            },
+            "cartproducts_variant_total_price": {
+                "decimal": "$15.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 1500,
+                "binary_operator": 1
+            },
+            "cartproducts_variant_on_sale": false,
+            "cartproducts_sale_percentage": 0,
+            "cartproducts_variant_qty_in_cart": 10,
+            "cartproducts_product_option": "dummy-option-2",
+            "cartproducts_variant_option_value": "dummy-value-2",
+            "cartproducts_product_variant_image": "https://dummyimage.com/product2.jpg",
+            "cartproducts_variant_weight": 3,
+            "cartproducts_product_custom_fields": {
+                "gender": "unisex",
+                "gtin": "dummy-gtin"
+            },
+            "cartproducts_variant_sku": "dummy-sku-2",
+            "cartproducts_variant_barcode": "dummy-barcode-2",
+            "cartproducts_variant_original_price": {
+                "decimal": "$15.00",
+                "currency_code": "USD",
+                "symbol": "$",
+                "amount": 1500,
+                "binary_operator": 1
+            },
+            "cartproducts_taxable": false,
+            "shipping_location": "dummy-location-2"
+        }
+    ],
+    "cartrequest_total_price": {
+        "decimal": "$25.00",
+        "currency_code": "USD",
+        "symbol": "$",
+        "amount": 2500,
+        "binary_operator": 1
+    },
+    "cartrequest_total_weight": 8,
+    "cartrequest_total_qty": 15,
+    "cartrequest_is_virtual": true,
+    "cartrequest_cart_type": 1,
+    "cartrequest_cart_product_uuid": "dummy-cart-uuid",
+    "cartrequest_customer_first_name": "DummyFirstName",
+    "cartrequest_customer_last_name": "DummyLastName",
+    "cartrequest_customer_email": "dummy@example.com",
+    "cartrequest_create_new_cart": true
+}

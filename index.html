@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Apply styles to the label and input container */
+.label-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Apply styles to the label */
+.label-container label {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Apply styles to the label when the input container is focused */
+.label-container:focus-within label {
+  color: #007bff;
+}
+</style>
+</head>
+<body>
+
+<div class="label-container">
+  <input type="text" id="myInput">
+  <label for="myInput">Enter something:</label>
+</div>
+
+</body>
+</html>
+
+In this example, the styles are applied to both the label and the input container. When the input container (containing the input element) gains focus, the label's color changes. This creates the appearance of the label responding to the input element's focus.
+
+Copy and paste this code into an HTML file, and then open it in a web browser to see the effects. When you click on the input element or tab into it, the label's color will change to indicate focus.
+
+You can modify the styles further to match your desired design and animation effects.
